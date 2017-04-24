@@ -1,0 +1,159 @@
+@import "mixin";
+
+.btn {
+  border-width: 0;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  @include RobotoBold;
+
+  &-transparent {
+    min-width: 200px;
+    height: 45px;
+    padding: 14px 29px 0;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    fill: #ffffff;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: normal;
+    box-shadow: 0 8px 15px rgba(#fff, 0.25);
+
+    svg {
+      width: 14px;
+      height: 13px;
+      margin-right: 10px;
+      margin-left: 10px;
+      fill: inherit;
+    }
+
+    &:hover, &:active {
+      background-color: #ffffff;
+      color: #4580E0;
+      fill: #4580E0;
+      box-shadow: 0 8px 15px 0 rgba(69, 128, 224, 0.25);
+    }
+  }
+
+  &-yellow {
+    min-width: 202px;
+    height: 60px;
+    color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 8px 15px 0 rgba(232, 173, 0, 0.35);
+    background-image: linear-gradient(-270deg, #E0A700 0%, #FFBE00 100%);
+    &:hover, &:active {
+      background-image: linear-gradient(-270deg, #FFBE00 100%);
+    }
+  }
+
+  /* delete! */
+
+  &-blue {
+    padding: 20px 34px;
+    background-color: #4f8ad9;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 12px rgba(79, 138, 217, 0.24);
+    @include RobotoBold;
+    .arrow-right {
+      width: 20px;
+      height: 12px;
+      margin-left: 8px;
+      fill: #fff;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 1px;
+    }
+    .letter {
+      width: 27px;
+      height: 18px;
+      margin-left: 8px;
+      fill: #fff;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: -2px;
+    }
+    &:hover {
+      color: #fff;
+      background-color: #a7c343;
+    }
+  }
+
+  &-green {
+    padding: 20px 29px;
+    background-color: #a7c343;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    @include RobotoBold;
+    &:hover {
+      background-color: #4f8ad9;
+      color: #fff;
+    }
+  }
+
+  &-white {
+    padding: 21px 37px 18px 34px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #4f8ad9;
+    border-radius: 32px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
+    @include RobotoBold;
+    svg {
+      fill: #4f8ad9;
+      transition: all 0.3s ease;
+    }
+    .search {
+      width: 21px;
+      height: 18px;
+    }
+    .arrow-right {
+      width: 20px;
+      height: 12px;
+      margin-left: 8px;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 1px;
+    }
+    &:hover {
+      background-color: #505b6a;
+      color: #ffffff;
+      svg {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  &-back {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #505b6a;
+    @include RobotoBold;
+    &:hover {
+      color: #4f8ad9;
+      .arrow-right {
+        fill: #4f8ad9;
+      }
+    }
+    .arrow-right {
+      width: 20px;
+      height: 12px;
+      margin-right: 10px;
+      transform: rotateZ(180deg);
+      fill: #505b6a;
+    }
+  }
+}

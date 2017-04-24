@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="36px" viewBox="0 0 40 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>XMLID_497_</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.6%" y="-8.5%" width="111.3%" height="123.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MD" transform="translate(-859.000000, -6899.000000)" fill-rule="nonzero" fill="#4580E0">
+            <g id="About-me-" transform="translate(-264.000000, 6093.000000)">
+                <g id="Content" transform="translate(493.000000, 191.000000)">
+                    <g id="Info" transform="translate(0.079861, 595.231029)">
+                        <g id="Telegram" filter="url(#filter-1)" transform="translate(630.000000, 22.000000)">
+                            <g id="Group-31" transform="translate(4.000000, 0.000000)">
+                                <path d="M0.56521438,13.3594094 L7.93865438,16.1114094 L10.7926277,25.2897561 C10.975241,25.8775961 11.6940677,26.0948761 12.1711877,25.7047961 L16.2812677,22.3541828 C16.7120944,22.0031428 17.3257477,21.9856494 17.7759877,22.3124761 L25.1891077,27.6945561 C25.6995077,28.0655428 26.422601,27.7858628 26.550601,27.1691161 L31.9811077,1.04740942 C32.120841,0.373702753 31.4588677,-0.188323914 30.8173744,0.0597827528 L0.55657438,11.7334894 C-0.190198953,12.0214894 -0.183692287,13.0787694 0.56521438,13.3594094 Z M10.332681,14.6464494 L24.7431344,5.77103609 C25.002121,5.61199609 25.2685744,5.96218275 25.0461744,6.16847609 L13.1533744,17.2234094 C12.7353477,17.6125294 12.4656944,18.1332761 12.389321,18.6985028 L11.984201,21.7007428 C11.9305477,22.1015961 11.3674544,22.1413828 11.256841,21.7534361 L9.69876105,16.2787694 C9.52030771,15.6543428 9.78036105,14.9873561 10.332681,14.6464494 Z" id="XMLID_497_"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

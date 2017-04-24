@@ -1,0 +1,60 @@
+@import 'lib/breakpoint';
+@import 'lib/breakpoint-slicer';
+@import "common/mixin";
+
+@include from('s') {
+
+}
+
+@include from('m') {
+}
+
+@include from('l') {
+}
+
+@include from('xl') {
+}
+
+@include to('xl') {
+}
+
+@include to('l') {
+}
+
+@include to('m') {
+}
+
+@include to('s') {
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 330px) {
+}
+
+@include to('xs') {
+}
+
+@include at('l') {
+}
+
+@include at('m') {
+}
+
+@include at('s') {
+}
+
+@include between('m', 'l') {
+}
+
+@include between('s', 'm') {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+only screen and (min--moz-device-pixel-ratio: 1.5) {
+}
+
+@media (min-width: 1921px) {
+}
