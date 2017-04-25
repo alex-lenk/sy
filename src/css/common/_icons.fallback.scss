@@ -1,0 +1,28 @@
+.icon {
+	background-repeat: no-repeat;
+
+	&.icon-progress-2-white {
+		background-image: url('../../src/img/icons/progress/png/progress-2-white.png');
+	}
+
+	&.icon-progress-2 {
+		background-image: url('../../src/img/icons/progress/png/progress-2.png');
+	}
+
+	&.icon-progress-3-white {
+		background-image: url('../../src/img/icons/progress/png/progress-3-white.png');
+	}
+
+	&.icon-progress-3 {
+		background-image: url('../../src/img/icons/progress/png/progress-3.png');
+	}
+
+	&.icon-progress-white {
+		background-image: url('../../src/img/icons/progress/png/progress-white.png');
+	}
+
+	&.icon-progress {
+		background-image: url('../../src/img/icons/progress/png/progress.png');
+	}
+
+}

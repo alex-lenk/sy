@@ -1,0 +1,125 @@
+.writing-texts {
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background: url(../img/bg-writing-texts.jpg) no-repeat center top;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &::before, &::after {
+      width: 194px;
+      height: 194px;
+      background: url(../img/buble-writing-mini.png) no-repeat center;
+      content: '';
+      position: absolute;
+      z-index: 5;
+    }
+    &::after {
+      right: -49px;
+      bottom: 89px;
+    }
+    &::before {
+      left: -52px;
+      bottom: -66px;
+    }
+  }
+  h2 {
+    width: 100%;
+  }
+
+  .list-blue {
+    font-size: 15px;
+  }
+}
+
+.writing-texts-box {
+  margin-bottom: 60px;
+  padding-right: 216px;
+  flex-basis: 50%;
+  position: relative;
+  z-index: 7;
+  + .writing-texts-box {
+    padding-left: 216px;
+    padding-right: 0;
+  }
+  .title {
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    text-transform: uppercase;
+    @include RobotoMedium;
+  }
+}
+
+.writing-texts-price {
+  width: 322px;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 35px 0 rgba(69, 128, 224, 0.15);
+  position: relative;
+  z-index: 7;
+  .title {
+    margin: 0;
+    padding: 0 0 10px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    @include RobotoMedium;
+  }
+  .icon-dollar {
+    width: 11px;
+    height: 20px;
+    margin-top: 2px;
+    margin-right: 4px;
+    vertical-align: top;
+  }
+  .text {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #DEE3E5;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    line-height: 27px;
+    text-align: center;
+    @include RobotoMedium;
+    .text-yellow {
+      font-size: 20px;
+      color: #E0A700;
+    }
+  }
+}
+
+.writing-texts-btn {
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -180px 0 0 -240px;
+  background: url(../img/buble-writing.png) no-repeat center;
+
+  .icon-writing-text {
+    width: 90px;
+    height: 83px;
+    margin: -117px 0 0 -45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -44px 0 0 -100px;
+  }
+}

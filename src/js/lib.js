@@ -9,4 +9,4 @@
 
 // = ../../bower_components/air-datepicker/dist/js/datepicker.min.js
 
-// = lib/SmoothScroll.js
+//= lib/smoothscroll.js
