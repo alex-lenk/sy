@@ -20,29 +20,7 @@ var gulp = require('gulp'),
     create = browserSync.create(),
     reload = browserSync.reload,
     svgstore = require('gulp-svgstore'),
-    svgmin = require('gulp-svgmin'),
-    path = require('path'),
-    gulpHtmlVersion = require('gulp-html-version');
-
-
-/*gulp.task('svgstore', function () {
-    return gulp
-        .src('./source/icons/!*.svg')
-        .pipe(svgmin(function (file) {
-            var prefix = path.basename(file.relative, path.extname(file.relative));
-            return {
-                plugins: [{
-                    cleanupIDs: {
-                        prefix: prefix + '-',
-                        minify: true
-                    }
-                }]
-            }
-        }))
-        .pipe(svgstore())
-        .pipe(gulp.dest('./build/img'));
-});*/
-
+    svgmin = require('gulp-svgmin');
 
 var path = {
         build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -90,7 +68,7 @@ gulp.task('clean', function (cb) {
 
 gulp.task('iconify', function () {
     iconify({
-        src: './source/icons/*.svg',
+        src: './src/img/icons/progress/*.svg',
         scssOutput: './src/css/common',
         cssOutput: './test/css',
         defaultWidth: '300px',

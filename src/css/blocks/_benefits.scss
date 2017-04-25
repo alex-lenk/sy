@@ -1,0 +1,37 @@
+.benefits {
+  list-style: none;
+  padding-top: 25px;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+
+  [class^="icon-"] {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 25px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 8px 12px 0 rgba(191, 191, 191, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-experience svg {
+    width: 50px;
+    height: 50px;
+  }
+  .icon-any-complexity svg {
+    width: 38px;
+    height: 50px;
+  }
+  .icon-orders svg {
+    width: 38px;
+    height: 50px;
+  }
+  .icon-any-language svg {
+    width: 52px;
+    height: 50px;
+  }
+}

@@ -1,55 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="46px" height="58px" viewBox="0 0 46 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 4</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-18.4%" y="-10.0%" width="136.8%" height="130.0%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="MD" transform="translate(-797.000000, -865.000000)" fill-rule="nonzero">
-            <g id="Benefits" transform="translate(279.000000, 843.000000)">
-                <g id="Difficult" transform="translate(454.000000, 0.000000)">
-                    <g id="Group-4" filter="url(#filter-1)" transform="translate(68.000000, 24.000000)">
-                        <g id="flaticon1491911197-svg">
-                            <polygon id="Shape" fill="#D3D7DA" points="25.946875 11.428125 36.65625 11.428125 25.946875 0.71875"></polygon>
-                            <path d="M37.375,46 L0,46 L0,0 L26.7375,0 L37.375,10.6375 L37.375,46 Z M1.4375,44.5625 L35.9375,44.5625 L35.9375,11.2125 L26.1625,1.4375 L1.4375,1.4375 L1.4375,44.5625 Z" id="Shape" fill="#193651"></path>
-                            <path d="M8.05,17.825 C9.05625,18.471875 10.278125,18.83125 11.571875,18.83125 C14.734375,18.83125 17.39375,16.603125 18.040625,13.584375 L11.859375,12.79375 L8.05,17.825 Z" id="Shape" fill="#F16051"></path>
-                            <path d="M18.25625,12.290625 L18.25625,11.93125 C18.25625,8.48125 15.596875,5.60625 12.146875,5.390625 L12.146875,11.5 L18.25625,12.290625 Z" id="Shape" fill="#FDBF5E"></path>
-                            <path d="M10.925,5.390625 C7.546875,5.678125 4.815625,8.48125 4.815625,11.93125 C4.815625,13.94375 5.678125,15.66875 7.04375,16.890625 L10.853125,11.7875 L10.853125,5.390625 L10.925,5.390625 Z" id="Shape" fill="#2EA2DB"></path>
-                            <rect id="Rectangle-path" fill="#193651" x="12.9375" y="38.525" width="1.4375" height="1.4375"></rect>
-                            <rect id="Rectangle-path" fill="#F16051" x="6.6125" y="37.51875" width="3.378125" height="3.378125"></rect>
-                            <rect id="Rectangle-path" fill="#193651" x="12.9375" y="32.05625" width="1.4375" height="1.4375"></rect>
-                            <rect id="Rectangle-path" fill="#F16051" x="6.6125" y="31.05" width="3.378125" height="3.378125"></rect>
-                            <g id="Group" transform="translate(12.937500, 25.587500)" fill="#193651">
-                                <rect id="Rectangle-path" x="0" y="0" width="1.4375" height="1.4375"></rect>
-                                <rect id="Rectangle-path" x="3.378125" y="12.9375" width="14.375" height="1.4375"></rect>
-                                <rect id="Rectangle-path" x="3.378125" y="6.46875" width="14.375" height="1.4375"></rect>
-                                <rect id="Rectangle-path" x="3.378125" y="0" width="14.375" height="1.4375"></rect>
-                            </g>
-                            <rect id="Rectangle-path" fill="#F16051" x="6.6125" y="24.58125" width="3.378125" height="3.378125"></rect>
-                        </g>
-                        <g id="flaticon1491911202-svg" transform="translate(0.094608, 10.081092)">
-                            <rect id="Rectangle-path" fill="#F16051" x="20.50157" y="7.26334471" width="5.40122867" height="31.8158362"></rect>
-                            <rect id="Rectangle-path" fill="#FDBF5E" x="10.7141297" y="17.6420478" width="5.40122867" height="21.4369966"></rect>
-                            <rect id="Rectangle-path" fill="#4FBF9F" x="0.838361775" y="24.9848464" width="5.40122867" height="14.094198"></rect>
-                            <g id="Group" fill="#193651">
-                                <path d="M26.7498976,39.9175427 L19.6630717,39.9175427 L19.6630717,0 L26.7498976,0 L26.7498976,39.9175427 Z M21.3488055,38.2318089 L25.0643003,38.2318089 L25.0643003,1.69447099 L21.3488055,1.69447099 L21.3488055,38.2318089 Z" id="Shape"></path>
-                                <path d="M16.9624573,39.9175427 L9.8756314,39.9175427 L9.8756314,11.1464846 L16.9624573,11.1464846 L16.9624573,39.9175427 L16.9624573,39.9175427 Z M11.5613652,38.2318089 L15.2768601,38.2318089 L15.2768601,12.8322184 L11.5613652,12.8322184 L11.5613652,38.2318089 Z" id="Shape"></path>
-                                <path d="M7.08682594,39.9175427 L0,39.9175427 L0,18.9923549 L7.08682594,18.9923549 L7.08682594,39.9175427 L7.08682594,39.9175427 Z M1.68559727,38.2318089 L5.40109215,38.2318089 L5.40109215,20.6780887 L1.68559727,20.6780887 L1.68559727,38.2318089 Z" id="Shape"></path>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<!-- Generated by IcoMoon.io -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="25" height="32" viewBox="0 0 25 32">
+<title>icon-any-complexity</title>
+<path fill="#d3d7da" d="M16.522 7.409h5.909l-5.909-5.909z"></path>
+<path fill="#193651" d="M22.828 26.483h-20.621v-25.379h14.752l5.869 5.869v19.51zM3 25.69h19.034v-18.4l-5.393-5.393h-13.641v23.793z"></path>
+<path fill="#f16051" d="M6.648 10.938c0.555 0.357 1.229 0.555 1.943 0.555 1.745 0 3.212-1.229 3.569-2.895l-3.41-0.436-2.102 2.776z"></path>
+<path fill="#fdbf5e" d="M12.279 7.884v-0.198c0-1.903-1.467-3.49-3.371-3.609v3.371l3.371 0.436z"></path>
+<path fill="#2ea2db" d="M8.234 4.078c-1.864 0.159-3.371 1.705-3.371 3.609 0 1.11 0.476 2.062 1.229 2.736l2.102-2.816v-3.529h0.040z"></path>
+<path fill="#193651" d="M9.345 22.359h0.793v0.793h-0.793v-0.793z"></path>
+<path fill="#f16051" d="M5.855 21.803h1.864v1.864h-1.864v-1.864z"></path>
+<path fill="#193651" d="M9.345 18.79h0.793v0.793h-0.793v-0.793z"></path>
+<path fill="#f16051" d="M5.855 18.234h1.864v1.864h-1.864v-1.864z"></path>
+<path fill="#193651" d="M9.345 15.221h0.793v0.793h-0.793v-0.793z"></path>
+<path fill="#193651" d="M11.209 22.359h7.931v0.793h-7.931v-0.793z"></path>
+<path fill="#193651" d="M11.209 18.79h7.931v0.793h-7.931v-0.793z"></path>
+<path fill="#193651" d="M11.209 15.221h7.931v0.793h-7.931v-0.793z"></path>
+<path fill="#f16051" d="M5.855 14.666h1.864v1.864h-1.864v-1.864z"></path>
+<path fill="#f16051" d="M13.57 10.673h2.98v17.554h-2.98v-17.554z"></path>
+<path fill="#fdbf5e" d="M8.17 16.399h2.98v11.827h-2.98v-11.827z"></path>
+<path fill="#4fbf9f" d="M2.722 20.45h2.98v7.776h-2.98v-7.776z"></path>
+<path fill="#193651" d="M17.018 28.689h-3.91v-22.023h3.91v22.023zM14.038 27.759h2.050v-20.159h-2.050v20.159z"></path>
+<path fill="#193651" d="M11.618 28.689h-3.91v-15.874h3.91v15.874zM8.638 27.759h2.050v-14.014h-2.050v14.014z"></path>
+<path fill="#193651" d="M6.169 28.689h-3.91v-11.545h3.91v11.545zM3.189 27.759h2.050v-9.685h-2.050v9.685z"></path>
 </svg>
