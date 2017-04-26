@@ -8,6 +8,7 @@
   line-height: 1;
   display: inline-block;
   text-transform: uppercase;
+  position: relative;
   transition: all .3s ease;
   @include RobotoBold;
 

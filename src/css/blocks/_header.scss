@@ -149,14 +149,15 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  .about-me {
-    line-height: 1;
-    margin-right: 75px;
-    color: #fff;
-    border-bottom: 1px solid;
-    @include RobotoMedium;
-    &:hover {
-      border-color: transparent;
-    }
+}
+
+.header-action-string {
+  line-height: 1;
+  margin-right: 75px;
+  color: #fff;
+  border-bottom: 1px solid;
+  @include RobotoMedium;
+  &:hover {
+    border-color: transparent;
   }
 }
