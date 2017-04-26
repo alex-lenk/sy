@@ -68,7 +68,7 @@ gulp.task('clean', function (cb) {
 
 gulp.task('iconify', function () {
     iconify({
-        src: './src/img/icons/progress/*.svg',
+        src: './src/img/icons/*.svg',
         scssOutput: './src/css/common',
         cssOutput: './test/css',
         defaultWidth: '300px',
