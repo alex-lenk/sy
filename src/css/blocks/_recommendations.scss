@@ -1,0 +1,85 @@
+.recommendations {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.recommendations-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    min-height: 200px;
+    margin: 55px 15px 0;
+    max-width: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  img {
+    margin: 0 auto 15px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 8px 12px 0 rgba(191, 191, 191, 0.35);
+  }
+}
+
+.recommendations-list-title {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.recommendations-list-text {
+  min-height: 42px;
+  margin-bottom: 15px;
+  @include RobotoLight;
+}
+
+.recommendations-more {
+  margin-top: 40px;
+  padding-top: 50px;
+  border-top: 10px solid #F8FAFE;
+  text-align: center;
+  position: relative;
+  &::before, &::after {
+
+    content: '';
+    position: absolute;
+    z-index: 5;
+  }
+  &::before {
+    left: 89px;
+    bottom: -70px;
+    width: 285px;
+    height: 285px;
+    background: url(../img/buble-recommendations.png) no-repeat center;
+  }
+  &::after {
+    width: 190px;
+    height: 190px;
+    right: 130px;
+    bottom: -71px;
+    background: url(../img/buble-recommendations-mini.png) no-repeat center;
+  }
+
+  .btn-block {
+    width: 540px;
+    padding: 20px;
+    margin: 40px auto 0;
+    background-color: #ffffff;
+    border: 10px solid #F8FAFE;
+    position: relative;
+    z-index: 11;
+  }
+  .btn-yellow {
+    margin-right: 30px;
+  }
+}
+
+.recommendations-more-title {
+  margin-bottom: 5px;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}

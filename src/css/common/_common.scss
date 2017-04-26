@@ -8,11 +8,11 @@ body {
 }
 
 a, .as-link {
-  color: #4f8ad9;
+  color: #5A7CE5;
   text-decoration: none;
   transition: all 0.3s ease;
   &:hover {
-    color: #4f8ad9;
+    color: #32b9fc;
   }
   &:focus {
     outline: none;
@@ -133,4 +133,8 @@ button, input, select, textarea {
     outline: none;
     box-shadow: none;
   }
+}
+
+.text-blue {
+  color: #4580E0;
 }

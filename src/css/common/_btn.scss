@@ -11,6 +11,23 @@
   transition: all .3s ease;
   @include RobotoBold;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  span {
+    position: relative;
+    z-index: 3;
+  }
+
   &-transparent {
     min-width: 200px;
     height: 45px;
@@ -45,12 +62,52 @@
   &-yellow {
     min-width: 202px;
     height: 60px;
+    padding-top: 7px;
     color: #ffffff;
     border-radius: 2px;
+    position: relative;
     box-shadow: 0 8px 15px 0 rgba(232, 173, 0, 0.35);
     background-image: linear-gradient(-270deg, #E0A700 0%, #FFBE00 100%);
+    &::before {
+      background: #FFBE00;
+    }
     &:hover, &:active {
-      background-image: linear-gradient(-270deg, #FFBE00 100%);
+      color: #ffffff;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-online {
+    min-width: 155px;
+    height: 60px;
+    padding-top: 23px;
+    border-radius: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    position: relative;
+    background-image: linear-gradient(90deg, #4580E0 0%, #2FC1FF 100%);
+    box-shadow: 0 8px 15px 0 rgba(69, 128, 224, 0.35);
+    @include RobotoBold;
+    .icon-vk {
+      width: 24px;
+      height: 14px;
+      margin-left: 5px;
+      fill: #ffffff;
+      position: relative;
+      z-index: 3;
+    }
+    &::before {
+      background: #2FC1FF;
+    }
+    &:hover {
+      color: #fff;
+      &::before {
+        opacity: 1;
+      }
     }
   }
 
@@ -62,92 +119,22 @@
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1.24px;
-    box-shadow: 0 8px 15px 0 rgba(69,128,224,0.35);
+    box-shadow: 0 8px 15px 0 rgba(69, 128, 224, 0.35);
     background: #4580e0;
     background: -moz-linear-gradient(left, #4580e0 0%, #2fe9ff 100%);
-    background: -webkit-linear-gradient(left, #4580e0 0%,#2fe9ff 100%);
-    background: linear-gradient(to right, #4580e0 0%,#2fe9ff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4580e0', endColorstr='#2fe9ff',GradientType=1 );
+    background: -webkit-linear-gradient(left, #4580e0 0%, #2fe9ff 100%);
+    background: linear-gradient(to right, #4580e0 0%, #2fe9ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4580e0', endColorstr='#2fe9ff', GradientType=1);
     @include RobotoBold;
 
-    &:hover {
-      &::before {
-        background: #2fe9ff;
-        background: -moz-linear-gradient(left, #2fe9ff 0%, #4580e0 100%);
-        background: -webkit-linear-gradient(left, #2fe9ff 0%,#4580e0 100%);
-        background: linear-gradient(to right, #2fe9ff 0%,#4580e0 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fe9ff', endColorstr='#4580e0',GradientType=1 );
-      }
+    &::before {
+      background: #2FC1FF;
     }
-  }
-
-  /* delete! */
-
-  &-green {
-    padding: 20px 29px;
-    background-color: #a7c343;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 30px;
-    text-transform: uppercase;
-    @include RobotoBold;
     &:hover {
-      background-color: #4f8ad9;
       color: #fff;
-    }
-  }
-
-  &-white {
-    padding: 21px 37px 18px 34px;
-    text-transform: uppercase;
-    font-size: 15px;
-    color: #4f8ad9;
-    border-radius: 32px;
-    background-color: #ffffff;
-    box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
-    @include RobotoBold;
-    svg {
-      fill: #4f8ad9;
-      transition: all 0.3s ease;
-    }
-    .search {
-      width: 21px;
-      height: 18px;
-    }
-    .arrow-right {
-      width: 20px;
-      height: 12px;
-      margin-left: 8px;
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 1px;
-    }
-    &:hover {
-      background-color: #505b6a;
-      color: #ffffff;
-      svg {
-        fill: #ffffff;
+      &::before {
+        opacity: 1;
       }
-    }
-  }
-
-  &-back {
-    text-transform: uppercase;
-    font-size: 15px;
-    color: #505b6a;
-    @include RobotoBold;
-    &:hover {
-      color: #4f8ad9;
-      .arrow-right {
-        fill: #4f8ad9;
-      }
-    }
-    .arrow-right {
-      width: 20px;
-      height: 12px;
-      margin-right: 10px;
-      transform: rotateZ(180deg);
-      fill: #505b6a;
     }
   }
 }
