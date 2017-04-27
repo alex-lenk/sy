@@ -1,7 +1,7 @@
 .writing-texts {
-  padding-top: 120px;
+  padding-top: 135px;
   padding-bottom: 50px;
-  background: url(../img/bg-writing-texts.jpg) no-repeat center top;
+  overflow: hidden;
 
   .container {
     position: relative;
@@ -36,17 +36,17 @@
 
 .writing-texts-box {
   margin-bottom: 60px;
-  padding-right: 216px;
+  padding-right: 117px;
   flex-basis: 50%;
   position: relative;
   z-index: 7;
   + .writing-texts-box {
-    padding-left: 216px;
+    padding-left: 117px;
     padding-right: 0;
   }
   .title {
     padding: 0;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 26px;
@@ -103,7 +103,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -180px 0 0 -240px;
+  margin: -185px 0 0 -240px;
   background: url(../img/buble-writing.png) no-repeat center;
 
   .icon-writing-text {
@@ -120,6 +120,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -44px 0 0 -100px;
+    margin: -44px 0 0 -99px;
   }
 }

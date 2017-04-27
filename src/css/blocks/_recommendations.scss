@@ -1,6 +1,8 @@
 .recommendations {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 65px;
+  .nav-tabs-blue {
+    margin-bottom: 30px;
+  }
 }
 
 .recommendations-list {
@@ -13,12 +15,13 @@
   flex-wrap: wrap;
   li {
     min-height: 200px;
-    margin: 55px 15px 0;
-    max-width: calc(100% / 3 - 30px);
-    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 55px;
+    padding: 0 15px;
+    max-width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
   }
   img {
-    margin: 0 auto 15px;
+    margin: 0 auto 20px;
     display: block;
     border-radius: 50%;
     box-shadow: 0 8px 12px 0 rgba(191, 191, 191, 0.35);
@@ -27,23 +30,23 @@
 
 .recommendations-list-title {
   font-size: 17px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .recommendations-list-text {
   min-height: 42px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  line-height: 1.3;
   @include RobotoLight;
 }
 
 .recommendations-more {
-  margin-top: 40px;
+  margin-top: 45px;
   padding-top: 50px;
   border-top: 10px solid #F8FAFE;
   text-align: center;
   position: relative;
   &::before, &::after {
-
     content: '';
     position: absolute;
     z-index: 5;
@@ -68,17 +71,17 @@
     padding: 20px;
     margin: 40px auto 0;
     background-color: #ffffff;
-    border: 10px solid #F8FAFE;
+    border: 5px solid #F8FAFE;
     position: relative;
     z-index: 11;
   }
   .btn-yellow {
-    margin-right: 30px;
+    margin-right: 25px;
   }
 }
 
 .recommendations-more-title {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 22px;
   letter-spacing: 1.5px;
   text-transform: uppercase;

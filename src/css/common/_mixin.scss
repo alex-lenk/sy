@@ -40,11 +40,12 @@
 }
 
 @mixin RobotoBold {
-  font-family: 'Roboto-Bold', sans-serif;
+  font-family: 'robotobold', sans-serif;
 }
 
 @mixin RobotoRegular {
-  font-family: 'Roboto-Regular', sans-serif;
+  font-family: 'robotoregular', sans-serif;
+  font-weight: normal;
 }
 
 @mixin RobotoLight {

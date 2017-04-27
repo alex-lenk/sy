@@ -1,4 +1,5 @@
 .clients {
+  padding-bottom: 140px;
   background: rgb(64, 142, 231);
   background: -moz-linear-gradient(top, rgba(64, 142, 231, 1) 0%, rgba(55, 153, 232, 1) 50%, rgba(64, 142, 231, 1) 100%);
   background: -webkit-linear-gradient(top, rgba(64, 142, 231, 1) 0%, rgba(55, 153, 232, 1) 50%, rgba(64, 142, 231, 1) 100%);
@@ -18,19 +19,19 @@
   &::before {
     top: 0;
     height: 100%;
-    background: url(../img/bg-top-clients.png) no-repeat center -110px;
+    background: url(../img/bg-top-clients.png) no-repeat center -90px;
   }
   &::after {
-    bottom: -140px;
-    background-image: url(../img/bg-bottom-clients.png);
+    bottom: 0;
+    background-image: url(../img/bg-bottom-clients.jpg);
     background-position: center bottom;
   }
 
   .container {
-    padding-top: 140px;
+    padding-top: 170px;
     height: 1000px;
     background: url(../img/bg-clients.png) no-repeat center 372px,
-    url(../img/bg-clients-line.png) no-repeat center;
+    url(../img/bg-clients-line.png) no-repeat center 60%;
     background-size: contain;
     position: relative;
     z-index: 15;
@@ -43,6 +44,7 @@
   .arrow {
     width: 14px;
     height: 12px;
+    margin-right: 10px;
     fill: #fff;
     transition: all 0.3s ease;
   }

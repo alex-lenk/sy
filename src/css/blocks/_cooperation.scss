@@ -1,6 +1,6 @@
 .cooperation {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 145px;
+  padding-bottom: 175px;
   position: relative;
   color: #FFFFFF;
   background-image: linear-gradient(-52deg, #4580E0 0%, #2FE9FF 100%);
@@ -14,27 +14,25 @@
     left: 0;
     z-index: 4;
   }
-  &::after {
-    width: 100%;
-    height: 150px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    background: url(../img/bg-header.png) no-repeat top left;
-  }
   .container {
     position: relative;
     z-index: 5;
   }
   h2 {
+    padding-bottom: 30px;
     color: #FFFFFF;
+  }
+  img {
+    box-shadow: 0 8px 15px 0 rgba(69,128,224,0.35);
+  }
+  .col-lg-7 {
+    letter-spacing: 1.1px;
   }
 }
 
 .cooperation-income {
-  padding: 20px;
-  margin-bottom: 40px;
+  padding: 20px 20px 22px;
+  margin-bottom: 60px;
   letter-spacing: 1px;
   background: rgba(69, 128, 224, 0.4);
   text-align: center;
@@ -55,7 +53,6 @@
   }
 
   .currency {
-    margin-bottom: 10px;
     font-size: 20px;
     letter-spacing: 1.3px;
     @include RobotoMedium;
@@ -76,10 +73,11 @@
 
 .cooperation-income-left {
   width: 330px;
+  padding-top: 5px;
 }
 
 .cooperation-partner {
-  padding-top: 30px;
+  padding-top: 35px;
   font-size: 17px;
   text-align: center;
   display: flex;

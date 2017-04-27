@@ -57,3 +57,79 @@
 /* footer */
 @import "blocks/footer";
 /* END footer */
+
+@include from('xl') {
+  .header-content {
+    padding: 0 25px;
+  }
+
+  .writing-texts-price {
+    width: 360px;
+  }
+  .writing-texts .btn {
+    width: 220px;
+    margin-left: -110px;
+  }
+  .writing-texts-box + .writing-texts-box {
+    padding-left: 210px;
+  }
+
+  .recommendations-list li {
+    padding: 0 35px;
+  }
+  .recommendations-more::before {
+    left: 205px;
+    bottom: -78px;
+  }
+  .recommendations-more::after {
+    right: 231px;
+    bottom: -70px;
+  }
+
+
+  .faq-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .faq-item {
+    max-width: calc(100% / 2 - 25px);
+    flex-basis: calc(100% / 2 - 25px);
+  }
+
+  .cooperation-income {
+    justify-content: space-around;
+  }
+  .cooperation-income-left {
+    width: 360px;
+  }
+  .cooperation .col-lg-5 {
+    width: 510px;
+    padding-right: 0;
+  }
+  .cooperation .col-lg-7 {
+    width: 630px;
+    float: right;
+    line-height: 1.3;
+  }
+  .cooperation-partner {
+    justify-content: space-between;
+  }
+  .cooperation-partner-box {
+    flex-direction: row;
+  }
+  .cooperation-partner-icon {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .cooperation-bottom {
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .header::after, .tariff::before, .clients::before, .benefits-wrap::after, .clients::after, .about-me,
+  .cooperation::before,footer::before{
+    background-size: 100%;
+  }
+}

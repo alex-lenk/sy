@@ -47,7 +47,6 @@
     svg {
       width: 14px;
       height: 13px;
-      margin-right: 10px;
       margin-left: 10px;
       fill: inherit;
     }
@@ -69,6 +68,9 @@
     position: relative;
     box-shadow: 0 8px 15px 0 rgba(232, 173, 0, 0.35);
     background-image: linear-gradient(-270deg, #E0A700 0%, #FFBE00 100%);
+    span {
+      top: -2px;
+    }
     &::before {
       background: #FFBE00;
     }

@@ -1,7 +1,18 @@
 .tariff {
-  padding-top: 90px;
+  padding-top: 150px;
   margin-bottom: 50px;
-  background: url(../img/bg-for-business.png) no-repeat top center;
+  position: relative;
+
+  &::before {
+    width: 100%;
+    height: 170px;
+    background: url(../img/bg-writing-texts.jpg) no-repeat center top;
+    content: '';
+    position: absolute;
+    bottom: -167px;
+    left: 0;
+  }
+
   img {
     box-shadow: 0 0 25px 0 rgba(195, 195, 195, 0.45);
   }
@@ -48,6 +59,7 @@
   .tab-content {
     padding-left: 25px;
     padding-bottom: 95px;
+    position: relative;
     box-shadow: inset 15px -15px 0 rgba(69, 129, 224, .04);
     .list-blue {
       max-width: 330px;
@@ -64,31 +76,40 @@
 }
 
 .tariff-order {
+  width: 100%;
   height: 60px;
-  margin-top: -35px;
   text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: -22px;
   .btn-yellow {
     padding: 0 0 0 40px;
     display: inline-flex;
     align-items: center;
     line-height: 1;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+
     .cost {
       width: 110px;
       height: 60px;
+      margin-top: 2px;
       margin-left: 40px;
+      border-radius: 0 2px 2px 0;
       display: inline-flex;
       vertical-align: middle;
       align-items: center;
       justify-content: center;
       font-size: 19px;
-      @include RobotoMedium;
+      text-transform: none;
       background-color: #E1A800;
+      @include RobotoMedium;
     }
   }
 }
 
 #for-business {
-  margin-bottom: 115px;
+  margin-bottom: 95px;
   .info-description {
     clear: both;
   }
@@ -101,14 +122,14 @@
   line-height: 1;
   text-transform: uppercase;
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 0;
   @include RobotoBold;
 }
 
 .info-description {
   max-width: 480px;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-left: 2px;
   padding-left: 15px;
   border-left: 3px solid #999;
@@ -118,4 +139,44 @@
       margin-bottom: 0;
     }
   }
+}
+
+.tariff-title-tab {
+  margin: -20px 0 20px;
+  padding: 0;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+  @include RobotoMedium;
+}
+
+.promotion-strategy {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  > li {
+    width: calc(100% / 3);
+    padding: 0 20px;
+    &:first-child {
+      padding-left: 10px;
+    }
+    &:last-child {
+      padding-right: 10px;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid #E1E6E9;
+    }
+  }
+}
+
+.promotion-strategy-title {
+  height: 55px;
+  margin-bottom: 25px;
+  background-color: #F8FAFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
