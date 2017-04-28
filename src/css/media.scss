@@ -2,53 +2,319 @@
 @import 'lib/breakpoint-slicer';
 @import "common/mixin";
 
-@include from('s') {
-
-}
-
-@include from('m') {
-}
-
 @include from('l') {
+  .header-content-list li {
+    display: inline-block;
+    &:first-child {
+      padding-bottom: 15px;
+    }
+    &:nth-child(odd) {
+      min-width: 241px;
+      border-right: 2px solid #ffffff;
+    }
+    &:nth-child(even) {
+      padding-left: 25px;
+    }
+  }
+
+  .writing-texts-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 10px 0 0 -100px;
+    .icon-writing-text {
+      width: 90px;
+      height: 83px;
+      margin-left: -45px;
+      position: absolute;
+      bottom: 88%;
+      left: 50%;
+    }
+  }
+
+  .clients .container {
+    background: url(../img/bg-clients.png) no-repeat center 372px,
+    url(../img/bg-clients-line.png) no-repeat center 60%;
+    background-size: contain;
+  }
+  .client-visits li {
+    width: calc(100% / 4);
+  }
+
+  .about-me {
+    .col-md-5 {
+      min-height: 410px;
+      padding-right: 30px;
+    }
+    .col-md-7 {
+      padding-left: 0;
+    }
+    .benefits {
+      justify-content: space-between;
+
+      .icon-experience, .icon-orders {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  .cooperation-partner-box {
+    flex-direction: column;
+  }
 }
 
 @include from('xl') {
-}
+  .header-content {
+    padding: 0 25px;
+  }
 
-@include to('xl') {
-}
+  .writing-texts-price {
+    width: 360px;
+  }
+  .writing-texts .btn {
+    width: 220px;
+  }
+  .writing-texts-box + .writing-texts-box {
+    padding-left: 210px;
+  }
+  .writing-texts-btn {
+    margin-left: -110px;
+    &::before {
+      left: -130px;
+    }
+  }
 
-@include to('l') {
+  .recommendations-list li {
+    padding: 0 35px;
+  }
+  .recommendations-more::before {
+    left: 205px;
+    bottom: -78px;
+  }
+  .recommendations-more::after {
+    right: 231px;
+    bottom: -70px;
+  }
+
+  .faq-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .faq-item {
+    max-width: calc(100% / 2 - 25px);
+    flex-basis: calc(100% / 2 - 25px);
+  }
+
+  .cooperation-income {
+    justify-content: space-around;
+  }
+  .cooperation-income-left {
+    width: 360px;
+  }
+  .cooperation .col-lg-5 {
+    width: 510px;
+    padding-right: 0;
+  }
+  .cooperation .col-lg-7 {
+    width: 630px;
+    float: right;
+    line-height: 1.3;
+  }
+  .cooperation-partner {
+    justify-content: space-between;
+  }
+  .cooperation-partner-box {
+    flex-direction: row;
+  }
+  .cooperation-partner-icon {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .cooperation-bottom {
+    padding-top: 90px;
+  }
 }
 
 @include to('m') {
+  .header {
+    height: 900px;
+  }
+  .top-panel {
+    margin-bottom: 120px;
+  }
+  .contact-btn {
+    width: 150px;
+    margin-left: 25px;
+  }
+  .header-content {
+    margin-bottom: 115px;
+  }
+  .header-content-title {
+    margin-bottom: 15px;
+    flex-direction: column;
+    svg {
+      margin-bottom: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .header-content-list {
+    margin-bottom: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    li {
+      &:first-child {
+        padding-bottom: 7px;
+      }
+      &:nth-child(2) {
+        order: 2;
+        padding: 13px 10px 6px 20px;
+        margin-top: 15px;
+        border-top: 2px solid #fff;
+      }
+      &:last-child {
+        order: 3;
+        padding-left: 20px;
+      }
+    }
+  }
+  .header .for-business, .header .for-info {
+    text-align: center;
+  }
+
+  .tariff {
+    .nav-tabs li {
+      font-size: 15px;
+      &::before {
+        display: none;
+      }
+    }
+    img {
+      max-width: 50%;
+    }
+  }
+
+  .promotion-strategy-title {
+    min-height: 76px;
+  }
+
+  .writing-texts .container::before {
+    left: -60px;
+    bottom: 59px;
+  }
+  .writing-texts-box {
+    margin-bottom: 50px;
+    padding-right: 0;
+    flex-basis: 49%;
+    + .writing-texts-box {
+      padding-left: 40px;
+    }
+  }
+  .writing-texts-price {
+    width: 47%;
+  }
+  .writing-texts-btn {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    &::before {
+      bottom: 128px;
+      left: 200px;
+      width: 348px;
+      height: 348px;
+      background-size: contain;
+    }
+    .btn-blue {
+      width: 250px;
+      padding: 0 10px 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-writing-text {
+      width: 50px;
+      height: 46px;
+      margin-bottom: 7px;
+      margin-right: 20px;
+      position: relative;
+    }
+  }
+
+  .nav-tabs-blue li {
+    font-size: 15px;
+  }
+
+  .clients {
+    overflow: hidden;
+    .container::before {
+      background: url(../img/bg-clients-line-sm.png) no-repeat center;
+      position: absolute;
+      width: 140%;
+      height: 100%;
+      top: 120px;
+      left: -155px;
+      content: '';
+      z-index: -1;
+    }
+  }
+  .client-visits li {
+    width: calc(100% / 3);
+  }
+
+  .recommendations-more {
+    &::after {
+      right: 20px;
+    }
+    &::before {
+      left: -6px;
+      bottom: -77px;
+
+    }
+  }
+  .recommendations .nav-tabs-blue li {
+    flex: 1 1 auto;
+  }
+
+  .about-me {
+    .col-md-7 {
+      min-height: 265px;
+    }
+    .benefits li {
+      flex-direction: column;
+    }
+  }
+  .author-contacts-wrap {
+    display: block;
+    margin: 0 auto;
+  }
+  .personal-block {
+    width: 345px;
+    margin-top: 0;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 100%;
+  }
+
+  .cooperation {
+    .col-lg-5 {
+      margin-bottom: 30px;
+    }
+    .cooperation-partner-icon {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
 }
 
-@include to('s') {
-}
-
-@media (max-width: 500px) {
-}
-
-@media (max-width: 330px) {
-}
-
-@include to('xs') {
-}
-
-@include at('l') {
-}
-
-@include at('m') {
-}
-
-@include at('s') {
-}
-
-@include between('m', 'l') {
-}
-
-@include between('s', 'm') {
+@media (min-width: 1921px) {
+  .header::after, .tariff::before, .clients::before, .benefits-wrap::after, .clients::after, .about-me,
+  .cooperation::before, footer::before {
+    background-size: 100%;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -56,5 +322,14 @@ only screen and (min-resolution: 144dpi),
 only screen and (min--moz-device-pixel-ratio: 1.5) {
 }
 
-@media (min-width: 1921px) {
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 480px;
+  }
+  .modal-title {
+    font-size: 30px;
+    color: #3C3C3C;
+    letter-spacing: 2px;
+    @include RobotoBold;
+  }
 }

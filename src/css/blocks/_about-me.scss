@@ -6,14 +6,10 @@
   .benefits {
     margin-bottom: 8px;
     padding-top: 0;
-    justify-content: space-between;
     li {
       padding: 0;
       display: flex;
       align-items: center;
-    }
-    .icon-experience, .icon-orders {
-      margin-right: 25px;
     }
   }
   p {
@@ -51,6 +47,16 @@
       fill: #4580E0;
       display: inline-block;
       margin: 0 auto;
+      transition: all .3s ease;
+    }
+    &:hover {
+      color: #32b9fc;
+      .as-link {
+        color: #32b9fc;
+      }
+      svg {
+        fill: #32b9fc;
+      }
     }
   }
   .icon-mail {

@@ -30,9 +30,6 @@
   .container {
     padding-top: 170px;
     height: 1000px;
-    background: url(../img/bg-clients.png) no-repeat center 372px,
-    url(../img/bg-clients-line.png) no-repeat center 60%;
-    background-size: contain;
     position: relative;
     z-index: 15;
   }
@@ -100,10 +97,9 @@
 }
 
 .client-visits {
-  display: flex;
   height: 100%;
+  display: flex;
   li {
-    width: calc(100% / 4);
     height: 100%;
     text-align: center;
     display: flex;

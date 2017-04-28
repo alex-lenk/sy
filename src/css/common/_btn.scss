@@ -66,10 +66,13 @@
     color: #ffffff;
     border-radius: 2px;
     position: relative;
+    letter-spacing: 1.17px;
+    font-weight: normal;
     box-shadow: 0 8px 15px 0 rgba(232, 173, 0, 0.35);
     background-image: linear-gradient(-270deg, #E0A700 0%, #FFBE00 100%);
     span {
       top: -2px;
+      align-self: center;
     }
     &::before {
       background: #FFBE00;

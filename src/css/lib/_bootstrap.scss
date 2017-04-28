@@ -946,14 +946,11 @@ button.close {
 .modal-content {
   position: relative;
   background-color: #ffffff;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   outline: 0;
+  box-shadow: 0 4px 20px 0 rgba(89, 89, 89, 0.25);
 }
 
 .modal-backdrop {
@@ -963,7 +960,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000000;
+  background-color: rgba(69, 128, 224, 0.3);
 }
 
 .modal-backdrop.fade {
@@ -972,8 +969,7 @@ button.close {
 }
 
 .modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 1;
 }
 
 .modal-header {
@@ -1026,10 +1022,6 @@ button.close {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
-  }
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
   .modal-sm {
     width: 300px;
