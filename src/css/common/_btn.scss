@@ -69,8 +69,10 @@
     letter-spacing: 1.17px;
     font-size: 17px;
     font-weight: normal;
-    box-shadow: 0 8px 15px 0 rgba(232, 173, 0, 0.35);
     background-image: linear-gradient(-270deg, #E0A700 0%, #FFBE00 100%);
+    &:not(:hover) {
+      box-shadow: 0 8px 15px 0 rgba(232, 173, 0, 0.35);
+    }
     span {
       top: -2px;
       align-self: center;
@@ -100,8 +102,10 @@
     letter-spacing: 1px;
     position: relative;
     background-image: linear-gradient(90deg, #4580E0 0%, #2FC1FF 100%);
-    box-shadow: 0 8px 15px 0 rgba(69, 128, 224, 0.35);
     @include RobotoBold;
+    &:not(:hover) {
+      box-shadow: 0 8px 15px 0 rgba(69, 128, 224, 0.35);
+    }
     span {
       top: -2px;
     }
@@ -132,14 +136,15 @@
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1.24px;
-    box-shadow: 0 8px 15px 0 rgba(69, 128, 224, 0.35);
     background: #4580e0;
     background: -moz-linear-gradient(left, #4580e0 0%, #2fe9ff 100%);
     background: -webkit-linear-gradient(left, #4580e0 0%, #2fe9ff 100%);
     background: linear-gradient(to right, #4580e0 0%, #2fe9ff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4580e0', endColorstr='#2fe9ff', GradientType=1);
     @include RobotoBold;
-
+    &:not(:hover) {
+      box-shadow: 0 8px 15px 0 rgba(69, 128, 224, 0.35);
+    }
     &::before {
       background: #2FC1FF;
     }
