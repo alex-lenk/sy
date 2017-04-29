@@ -3,7 +3,7 @@
         <section id="for-business">
             <header class="tariff-title">
                 <h2>Для Бизнеса</h2>
-                <a href="#" class="for-business-link">Под инфо проекты</a>
+                <a href="#for-info" class="for-business-link">Под инфо проекты</a>
             </header>
 
             <ul class="nav nav-tabs nav-tabs-blue" role="tablist">
@@ -21,11 +21,8 @@
 
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="for-business-1">
-                    <picture>
-                        <source srcset="img/img@2x.jpg"
-                                media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
-                        <img src="img/img.jpg" alt="" class="pull-right">
-                    </picture>
+                    <span data-fancybox="gallery" data-src="img/img@2x.jpg" class="fancybox-view pull-right"><img
+                            src="img/img@2x.jpg" alt=""></span>
 
                     <ul class="list-blue list-unstyled">
                         <li>SEO-параметры запросов</li>
@@ -39,14 +36,14 @@
                     </ul>
 
                     <div class="info-description">
-                        <p>Тариф для небольших магазинов, сервисов и агентств, с нишевой региональной
-                            направленностью.</p>
-                        <p>Стоимость рассчитывается исходя из объема работы: Количества категорий и направлений для
-                            проработки.</p>
+                        <p>Тариф для небольших магазинов, сервисов и агентств, с нишевой<br>
+                            региональной направленностью.</p>
+                        <p>Стоимость рассчитывается исходя из объема работы:<br>
+                            Количества категорий и направлений для проработки.</p>
                     </div>
 
                     <div class="tariff-order">
-                        <button class="btn btn-yellow">
+                        <button class="btn btn-yellow" data-toggle="modal" data-target="#orderModal2">
                             <span>Заказать</span>
                             <span class="cost">от $75</span>
                         </button>
@@ -54,11 +51,8 @@
                 </div>
 
                 <div role="tabpanel" class="tab-pane fade" id="for-business-2">
-                    <picture>
-                        <source srcset="img/img-1@2x.jpg"
-                                media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
-                        <img src="img/img-1.jpg" alt="" class="pull-right">
-                    </picture>
+                    <span data-fancybox="gallery" data-src="img/img@2x.jpg" class="fancybox-view pull-right"><img
+                            src="img/img-1@2x.jpg" alt=""></span>
 
                     <ul class="list-blue list-unstyled">
                         <li>Все пункты из базового тарифа</li>
@@ -76,7 +70,7 @@
                     </div>
 
                     <div class="tariff-order">
-                        <button class="btn btn-yellow">
+                        <button class="btn btn-yellow" data-toggle="modal" data-target="#orderModal2">
                             <span>Заказать</span>
                             <span class="cost">от $75</span>
                         </button>
@@ -120,7 +114,7 @@
                     </ul>
 
                     <div class="tariff-order">
-                        <button class="btn btn-yellow">
+                        <button class="btn btn-yellow" data-toggle="modal" data-target="#orderModal2">
                             <span>Заказать</span>
                             <span class="cost">от $75</span>
                         </button>
@@ -129,31 +123,28 @@
             </div>
         </section>
 
-        <section class="for-info">
+        <section id="for-info">
             <header class="tariff-title">
                 <h2>Под Инфо проекты</h2>
             </header>
 
             <ul class="nav nav-tabs nav-tabs-blue" role="tablist">
-                <li class="active" data-target="#for-business-4" aria-controls="for-business-1" role="tab"
+                <li class="active" data-target="#for-info-1" aria-controls="for-info-1" role="tab"
                     data-toggle="tab">
                     Базовый
                 </li>
-                <li data-target="#for-business-5" aria-controls="for-business-2" role="tab" data-toggle="tab">
+                <li data-target="#for-info-2" aria-controls="for-info-2" role="tab" data-toggle="tab">
                     Расширенный
                 </li>
-                <li data-target="#for-business-6" aria-controls="for-business-3" role="tab" data-toggle="tab">
+                <li data-target="#for-info-3" aria-controls="for-info-3" role="tab" data-toggle="tab">
                     Продвинутый
                 </li>
             </ul>
 
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="for-business-4">
-                    <picture>
-                        <source srcset="img/img-1@2x.jpg"
-                                media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
-                        <img src="img/img-1.jpg" alt="" class="pull-right">
-                    </picture>
+                <div role="tabpanel" class="tab-pane active" id="for-info-1">
+                    <span data-fancybox="gallery" data-src="img/img-1@2x.jpg" class="fancybox-view pull-right"><img
+                            src="img/img-1@2x.jpg" alt=""></span>
 
                     <ul class="list-blue list-unstyled">
                         <li>Постатейная группировка</li>
@@ -166,26 +157,23 @@
                     </ul>
 
                     <div class="info-description">
-                        <p>Тариф для небольших магазинов, сервисов и агентств, с нишевой региональной
-                            направленностью.</p>
-                        <p>Стоимость рассчитывается исходя из объема работы: Количества категорий и направлений для
-                            проработки.</p>
+                        <p>Тариф для небольших магазинов, сервисов и агентств, с нишевой <br>
+                            региональной направленностью.</p>
+                        <p>Стоимость рассчитывается исходя из объема работы: <br>
+                            Количества категорий и направлений для проработки.</p>
                     </div>
 
                     <div class="tariff-order">
-                        <button class="btn btn-yellow">
+                        <button class="btn btn-yellow" data-toggle="modal" data-target="#orderModal3">
                             <span>Заказать</span>
                             <span class="cost">от $75</span>
                         </button>
                     </div>
                 </div>
 
-                <div role="tabpanel" class="tab-pane fade" id="for-business-5">
-                    <picture>
-                        <source srcset="img/img-1@2x.jpg"
-                                media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
-                        <img src="img/img-1.jpg" alt="" class="pull-right">
-                    </picture>
+                <div role="tabpanel" class="tab-pane fade" id="for-info-2">
+                    <span data-fancybox="gallery" data-src="img/img-1@2x.jpg" class="fancybox-view pull-right"><img
+                            src="img/img-1@2x.jpg" alt=""></span>
 
                     <ul class="list-blue list-unstyled">
                         <li>Все пункты из базового тарифа</li>
@@ -203,14 +191,14 @@
                     </div>
 
                     <div class="tariff-order">
-                        <button class="btn btn-yellow">
+                        <button class="btn btn-yellow" data-toggle="modal" data-target="#orderModal3">
                             <span>Заказать</span>
                             <span class="cost">от $75</span>
                         </button>
                     </div>
                 </div>
 
-                <div role="tabpanel" class="tab-pane fade" id="for-business-6">
+                <div role="tabpanel" class="tab-pane fade" id="for-info-3">
                     <h3 class="tariff-title-tab">Стратегия продвижения - это файл, который даст вам ответ на
                         вопросы</h3>
 
@@ -247,7 +235,7 @@
                     </ul>
 
                     <div class="tariff-order">
-                        <button class="btn btn-yellow">
+                        <button class="btn btn-yellow" data-toggle="modal" data-target="#orderModal3">
                             <span>Заказать</span>
                             <span class="cost">от $75</span>
                         </button>

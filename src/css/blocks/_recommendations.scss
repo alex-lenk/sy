@@ -2,6 +2,11 @@
   padding-top: 65px;
   .nav-tabs-blue {
     margin-bottom: 30px;
+    font-size: 15px;
+  }
+  .site-link {
+    margin-top: 8px;
+    display: inline-block;
   }
 }
 
@@ -10,17 +15,17 @@
   padding-left: 0;
   list-style: none;
   text-align: center;
-  font-size: 15px;
   display: flex;
   flex-wrap: wrap;
   li {
     min-height: 200px;
     margin-top: 55px;
-    padding: 0 15px;
+    padding: 0 10px;
     max-width: calc(100% / 3);
     flex-basis: calc(100% / 3);
   }
   img {
+    width: 150px;
     margin: 0 auto 20px;
     display: block;
     border-radius: 50%;
@@ -31,12 +36,14 @@
 .recommendations-list-title {
   font-size: 17px;
   margin-bottom: 15px;
+  letter-spacing: 1.13px;
 }
 
 .recommendations-list-text {
-  min-height: 42px;
   margin-bottom: 0;
   line-height: 1.3;
+  letter-spacing: 1px;
+  font-size: 15px;
   @include RobotoLight;
 }
 
@@ -52,8 +59,8 @@
     z-index: 5;
   }
   &::before {
-    left: 89px;
-    bottom: -70px;
+    left: 104px;
+    bottom: -80px;
     width: 285px;
     height: 285px;
     background: url(../img/buble-recommendations.png) no-repeat center;
@@ -85,4 +92,7 @@
   font-size: 22px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  span {
+    font-size: 25px;
+  }
 }

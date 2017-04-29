@@ -9,20 +9,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
     &::before, &::after {
-      width: 194px;
-      height: 194px;
-      background: url(../img/buble-writing-mini.png) no-repeat center;
       content: '';
       position: absolute;
       z-index: 5;
     }
-    &::after {
-      right: -49px;
-      bottom: 89px;
-    }
     &::before {
+      width: 194px;
+      height: 194px;
+      background: url(../img/buble-decor.png) no-repeat center;
       left: -52px;
-      bottom: -66px;
+      bottom: -64px;
+    }
+    &::after {
+      width: 158px;
+      height: 158px;
+      background: url(../img/buble-decor-mini.png) no-repeat center;
+      right: -38px;
+      bottom: 107px;
     }
   }
   h2 {
@@ -55,19 +58,21 @@
   }
 }
 
+/* Rectangle 6: */
 .writing-texts-price {
   width: 322px;
   padding: 20px;
-  border-radius: 2px;
   background-color: #fff;
+  border-radius: 2px 6px 6px 6px;
   box-shadow: 0 0 35px 0 rgba(69, 128, 224, 0.15);
   position: relative;
   z-index: 7;
+
   .title {
     margin: 0;
     padding: 0 0 10px;
-    font-size: 19px;
-    letter-spacing: 1px;
+    font-size: 20px;
+    letter-spacing: 1.18px;
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
@@ -84,7 +89,7 @@
   .text {
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #DEE3E5;
+    border-bottom: 1px solid #DEE3E5;
     font-size: 17px;
     letter-spacing: 1.2px;
     line-height: 27px;

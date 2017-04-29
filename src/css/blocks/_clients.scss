@@ -35,6 +35,7 @@
   }
 
   h2 {
+    padding-bottom: 9px;
     color: #fff;
   }
 
@@ -61,6 +62,9 @@
       transition: all 0.3s ease;
       @include RobotoBold;
 
+      &:first-child {
+        margin-right: 42px;
+      }
       &:not(.active):hover {
         color: #F4C200;
         cursor: pointer;
@@ -89,7 +93,7 @@
   }
   .man {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 2px 0 10px;
     font-size: 13px;
     letter-spacing: 0.9px;
     white-space: nowrap;
@@ -98,6 +102,7 @@
 
 .client-visits {
   height: 100%;
+  line-height: 1;
   display: flex;
   li {
     height: 100%;
@@ -106,12 +111,26 @@
     flex-wrap: wrap;
     justify-content: center;
     align-self: flex-end;
+
+    &:first-child .client-visits-max {
+      margin-right: 60px;
+    }
+    &:nth-child(2) .client-visits-max {
+      margin-right: 60px;
+    }
+    &:nth-child(3) .client-visits-max {
+      margin-right: 50px;
+    }
+    &:last-child .client-visits-max {
+      margin-right: 29px;
+    }
   }
 }
 
 .client-visits-min {
   width: 90px;
-  padding-left: 5px;
+  text-align: right;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -120,15 +139,15 @@
   &::after {
     width: 35px;
     height: 50px;
+    margin-right: -10px;
     content: '';
-    border-radius: 2px;
-    background-image: linear-gradient(-180deg, #D9D2FF 0%, #FFFFFF 100%);
+    border-radius: 2px 0 0 2px;
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #D9D2FF 100%);
   }
 }
 
 .client-visits-max {
   width: 73px;
-  margin-right: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -136,7 +155,7 @@
   &::after {
     width: 73px;
     height: 246px;
-    border-radius: 2px;
+    border-radius: 2px 2px 2px 0;
     content: '';
     background-image: linear-gradient(-179deg, #FFBE00 0%, #E0A700 100%);
   }
@@ -150,6 +169,7 @@
   font-size: 15px;
   letter-spacing: 1px;
   img {
+    max-height: 45px;
     margin: 0 auto 20px;
     display: block;
   }

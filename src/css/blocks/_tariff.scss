@@ -13,10 +13,6 @@
     left: 0;
   }
 
-  img {
-    box-shadow: 0 0 25px 0 rgba(195, 195, 195, 0.45);
-  }
-
   .nav-tabs {
     li {
       &::before {
@@ -28,6 +24,7 @@
         content: '';
         display: inline-block;
         vertical-align: top;
+        transition: all 0.3s ease;
       }
       &:not(.active) {
         &:first-child {
@@ -57,12 +54,15 @@
   }
 
   .tab-content {
-    padding-left: 25px;
-    padding-bottom: 95px;
+    padding: 0 0 95px 30px;
     position: relative;
-    box-shadow: inset 15px -15px 0 rgba(69, 129, 224, .04);
-    .list-blue {
-      max-width: 330px;
+    box-shadow: inset 14px -14px 0 rgba(69, 129, 224, .04);
+    @include clearfix;
+    .pull-right {
+      margin-left: 25px;
+    }
+    .pull-left {
+      margin-right: 25px;
     }
   }
 
@@ -110,10 +110,7 @@
 }
 
 #for-business {
-  margin-bottom: 95px;
-  .info-description {
-    clear: both;
-  }
+  margin-bottom: 120px;
 }
 
 .for-business-link {
@@ -129,11 +126,11 @@
 }
 
 .info-description {
-  max-width: 480px;
-  margin-top: 25px;
+  margin-top: 26px;
   margin-left: 2px;
   padding-left: 15px;
   border-left: 3px solid #999;
+  font-size: 15px;
   p {
     margin-bottom: 15px;
     &:last-child {
@@ -152,33 +149,32 @@
   @include RobotoMedium;
 }
 
+#for-business-3, #for-info-3 {
+  padding-right: 30px;
+}
+
 .promotion-strategy {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
   display: flex;
-  > li {
-    width: calc(100% / 3);
-    padding: 0 20px;
-    &:first-child {
-      padding-left: 10px;
-    }
-    &:last-child {
-      padding-right: 10px;
-    }
-    &:not(:last-child) {
-      border-right: 1px solid #E1E6E9;
-    }
+  justify-content: space-between;
+  > li:not(:last-child):not(:first-child) {
+    border-right: 1px solid #E1E6E9;
+    border-left: 1px solid #E1E6E9;
   }
 }
 
 .promotion-strategy-title {
-  padding: 16px 10px 16px;
+  padding: 18px 10px 15px;
   min-height: 54px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   background-color: #F8FAFE;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-size: 15px;
+  color: #585858;
+  letter-spacing: 1px;
+  line-height: 27px;
 }

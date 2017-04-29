@@ -42,7 +42,7 @@
     align-items: center;
     white-space: nowrap;
     font-weight: normal;
-    box-shadow: 0 8px 15px rgba(#fff, 0.25);
+    box-shadow: 0 8px 15px rgba(#fff, 0.15);
 
     svg {
       width: 14px;
@@ -67,6 +67,7 @@
     border-radius: 2px;
     position: relative;
     letter-spacing: 1.17px;
+    font-size: 17px;
     font-weight: normal;
     box-shadow: 0 8px 15px 0 rgba(232, 173, 0, 0.35);
     background-image: linear-gradient(-270deg, #E0A700 0%, #FFBE00 100%);
@@ -75,13 +76,16 @@
       align-self: center;
     }
     &::before {
-      background: #FFBE00;
+      background: #E0A700;
     }
     &:hover, &:active {
       color: #ffffff;
       &::before {
         opacity: 1;
       }
+    }
+    &:active {
+      box-shadow: none;
     }
   }
 
@@ -98,6 +102,9 @@
     background-image: linear-gradient(90deg, #4580E0 0%, #2FC1FF 100%);
     box-shadow: 0 8px 15px 0 rgba(69, 128, 224, 0.35);
     @include RobotoBold;
+    span {
+      top: -2px;
+    }
     .icon-vk {
       width: 24px;
       height: 14px;

@@ -5,7 +5,85 @@
 </head>
 <body>
 <div class="wrapper">
-    <!-- include "temp/header.html" -->
+    <!-- .header -->
+    <header class="header header-full">
+        <div class="container">
+            <div class="top-panel">
+                <div class="logo">
+                    <span class="site-name">Семантическое Ядро</span>
+                    <span class="from-author">От Павлуцкого Александра</span>
+                </div>
+
+                <ul class="menu list-unstyled">
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <a href="#" target="_blank" class="contact-btn">
+                    Написать
+                    <svg class="icon-vk">
+                        <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="header-content">
+                <div class="for-business">
+                    <div class="header-content-title">
+                        <svg class="icon-business">
+                            <use xlink:href="img/sprite.svg#icon-business"></use>
+                        </svg>
+                        Для Бизнеса
+                    </div>
+
+                    <ul class="header-content-list list-unstyled">
+                        <li>Ядро для магазинов</li>
+                        <li>Под SEO-продвижение</li>
+                        <li>Сервисов/Агрега торов</li>
+                        <li>Под контекст</li>
+                    </ul>
+
+                    <a href="#for-business" class="btn btn-transparent">Подробнее
+                        <svg class="arrow">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="for-info">
+                    <div class="header-content-title">
+                        <svg class="icon-info">
+                            <use xlink:href="img/sprite.svg#icon-info"></use>
+                        </svg>
+                        Под инфо проекты
+                    </div>
+
+                    <ul class="header-content-list list-unstyled">
+                        <li>Для статейных сайтов</li>
+                        <li>Контент-план</li>
+                        <li>Журналы/Блоги</li>
+                        <li>ТЗ копирайтеру</li>
+                    </ul>
+
+                    <a href="#for-info" class="btn btn-transparent">Подробнее
+                        <svg class="arrow">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-action">
+                <a href="#about-me" class="header-action-string">Обо мне</a>
+
+                <button class="btn btn-yellow" data-toggle="modal" data-target="#orderModal"><span>Заказать</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- END header -->
+
 
     <!-- include "temp/benefits.html" -->
 
@@ -151,140 +229,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade order-modal" id="orderModal2" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel2">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <svg aria-hidden="true" class="icon-close">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
-            </button>
-
-            <h2 class="modal-title" id="orderModalLabel2">Бриф</h2>
-
-            <form action="#" class="modal-body">
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder" placeholder="Адрес сайта">
-                </div>
-
-                <div class="form-group">
-                    <input type="email" class="form-control hide-placeholder" placeholder="Ваш Email">
-                </div>
-
-                <div class="form-group under-core">
-                    <div class="under-core-label">Ядро под:</div>
-                    <div class="under-core-radio">
-                        <label class="radio-wrap">
-                            <input type="radio" name="name" class="radio-custom">
-                            <span class="radio-custom-view">SEO</span>
-                        </label>
-                        <label class="radio-wrap">
-                            <input type="radio" name="name" class="radio-custom" checked>
-                            <span class="radio-custom-view">Директ</span>
-                        </label>
-                        <label class="radio-wrap">
-                            <input type="radio" name="name" class="radio-custom">
-                            <span class="radio-custom-view">Оба</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder"
-                           placeholder="Регион сбора запросов">
-                </div>
-
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder"
-                           placeholder="Пример нужных запросов:">
-                </div>
-
-                <div class="form-group under-core">
-                    <div class="under-core-label">Инфо запросы в блог?</div>
-                    <div class="under-core-radio">
-                        <label class="radio-wrap">
-                            <input type="radio" name="name2" class="radio-custom">
-                            <span class="radio-custom-view">Да</span>
-                        </label>
-                        <label class="radio-wrap">
-                            <input type="radio" name="name2" class="radio-custom" checked>
-                            <span class="radio-custom-view">Нет</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder"
-                           placeholder="Где вы узнали о моих услугах?">
-                </div>
-
-                <div class="text-center">
-                    <button type="button" class="btn btn-yellow"><span>Отправить</span></button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade order-modal" id="orderModal3" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel3">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <svg aria-hidden="true" class="icon-close">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
-            </button>
-
-            <h2 class="modal-title" id="orderModalLabel3">Бриф</h2>
-
-            <form action="#" class="modal-body">
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder" placeholder="Адрес сайта">
-                </div>
-
-                <div class="form-group">
-                    <input type="email" class="form-control hide-placeholder" placeholder="Ваш Email">
-                </div>
-
-                <div class="form-group under-core">
-                    <div class="under-core-label">Нужно ли ТЗ копиратеру:</div>
-                    <div class="under-core-radio">
-                        <label class="radio-wrap">
-                            <input type="radio" name="name2" class="radio-custom" checked>
-                            <span class="radio-custom-view">Да</span>
-                        </label>
-                        <label class="radio-wrap">
-                            <input type="radio" name="name2" class="radio-custom">
-                            <span class="radio-custom-view">Нет</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder"
-                           placeholder="Пример нужных запросов:">
-                </div>
-
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder"
-                           placeholder="Сколько ТЗ (групп) планируете заказать?">
-                </div>
-
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder"
-                           placeholder="Где вы узнали о моих услугах?">
-                </div>
-
-                <div class="text-center">
-                    <button type="button" class="btn btn-yellow"><span>Отправить</span></button>
-                </div>
-            </form>
         </div>
     </div>
 </div>

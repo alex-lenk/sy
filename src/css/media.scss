@@ -3,6 +3,15 @@
 @import "common/mixin";
 
 @include from('l') {
+  h2 {
+    font-size: 34px;
+    letter-spacing: 2.3px;
+  }
+
+  .menu li:not(:first-child) {
+    margin-left: 40px;
+  }
+
   .header-content-list li {
     display: inline-block;
     &:first-child {
@@ -32,10 +41,21 @@
     }
   }
 
-  .clients .container {
-    background: url(../img/bg-clients.png) no-repeat center 372px,
-    url(../img/bg-clients-line.png) no-repeat center 60%;
-    background-size: contain;
+  .clients {
+    overflow: hidden;
+    .container {
+      position: relative;
+      &::before {
+        background: url(../img/bg-clients-line.png) no-repeat center 60%;
+        position: absolute;
+        width: 1145px;
+        height: 392px;
+        bottom: 242px;
+        left: 0;
+        content: '';
+        z-index: -1;
+      }
+    }
   }
   .client-visits li {
     width: calc(100% / 4);
@@ -45,13 +65,12 @@
     .col-md-5 {
       min-height: 410px;
       padding-right: 30px;
+      z-index: 9;
     }
     .col-md-7 {
       padding-left: 0;
     }
     .benefits {
-      justify-content: space-between;
-
       .icon-experience, .icon-orders {
         margin-right: 25px;
       }
@@ -60,6 +79,35 @@
 
   .cooperation-partner-box {
     flex-direction: column;
+  }
+
+  .recommendations .nav-tabs-blue {
+    font-size: 16px;
+  }
+  .recommendations-list img {
+    width: 170px;
+  }
+
+  #for-business-1, #for-info-1 {
+    padding-left: 14px;
+  }
+
+  .promotion-strategy > li {
+    &:first-child, &:last-child {
+      width: 33%;
+    }
+    &:first-child {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    &:last-child {
+      padding-right: 0;
+      padding-left: 24px;
+    }
+    &:not(:last-child):not(:first-child) {
+      width: 380px;
+      padding: 0 23px;
+    }
   }
 }
 
@@ -84,6 +132,9 @@
     }
   }
 
+  .recommendations .nav-tabs-blue {
+    font-size: 17px;
+  }
   .recommendations-list li {
     padding: 0 35px;
   }
@@ -94,6 +145,9 @@
   .recommendations-more::after {
     right: 231px;
     bottom: -70px;
+  }
+  .recommendations-list-text {
+    min-height: 42px;
   }
 
   .faq-wrap {
@@ -134,11 +188,40 @@
   .cooperation-bottom {
     padding-top: 90px;
   }
+
+  .clients .container {
+    background: url(../img/bg-clients.png) no-repeat center 386px;
+    background-size: 1175px 502px;
+  }
+  .client-visits li:last-child .client-visits-max {
+    margin-right: 45px;
+  }
+
+  .fancybox-view img {
+    max-width: 417px;
+  }
+
+  footer .developer {
+    margin-right: 55px;
+  }
+
+  .about-me .benefits {
+    justify-content: flex-start;
+    li:first-child {
+      margin-right: 70px;
+    }
+  }
+}
+
+@include to('s') {
+  .to-top {
+    display: none;
+  }
 }
 
 @include to('m') {
   .header {
-    height: 900px;
+    height: 890px;
   }
   .top-panel {
     margin-bottom: 120px;
@@ -148,13 +231,13 @@
     margin-left: 25px;
   }
   .header-content {
-    margin-bottom: 115px;
+    margin-bottom: 112px;
   }
   .header-content-title {
     margin-bottom: 15px;
     flex-direction: column;
     svg {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -183,27 +266,84 @@
   }
   .header .for-business, .header .for-info {
     text-align: center;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .benefits-wrap {
+    &::after {
+      top: 94%;
+    }
+    .benefits [class^="icon-"] {
+      margin-bottom: 23px;
+    }
   }
 
   .tariff {
-    .nav-tabs li {
-      font-size: 15px;
-      &::before {
-        display: none;
+    padding-top: 143px;
+    h2 {
+      margin-bottom: 58px;
+    }
+    .nav-tabs {
+      padding-left: 5px;
+      > li {
+        font-size: 15px;
+        &::before {
+          display: none;
+        }
       }
     }
-    img {
-      max-width: 50%;
+    .list-blue {
+      padding-left: 5px;
     }
+
+    .fancybox-view {
+      max-width: 283px;
+      margin-bottom: 26px;
+    }
+    .tab-content {
+      padding-left: 27px;
+    }
+    .tariff-order {
+      bottom: -17px;
+      z-index: 90;
+    }
+  }
+  .info-description {
+    margin-left: 6px;
+    clear: both;
+  }
+  #for-business {
+    margin-bottom: 97px;
+  }
+
+  .writing-texts h2 {
+    margin-bottom: 45px;
   }
 
   .promotion-strategy-title {
     min-height: 76px;
   }
+  .promotion-strategy > li {
+    width: 33%;
+    &:not(:last-child):not(:first-child) {
+      padding: 0 5px;
+      margin: 0 5px;
+    }
+  }
 
-  .writing-texts .container::before {
-    left: -60px;
-    bottom: 59px;
+  .writing-texts {
+    padding-top: 139px;
+    .container {
+      &::before {
+        left: -58px;
+        bottom: 63px;
+      }
+      &::after {
+        right: -44px;
+        bottom: 119px;
+      }
+    }
   }
   .writing-texts-box {
     margin-bottom: 50px;
@@ -212,9 +352,33 @@
     + .writing-texts-box {
       padding-left: 40px;
     }
+    .list-blue li {
+      padding-left: 16px;
+    }
   }
   .writing-texts-price {
-    width: 47%;
+    width: 48%;
+    padding-top: 21px;
+    .title {
+      margin: 0;
+      padding: 0 0 7px;
+      font-size: 19px;
+      letter-spacing: 1.12px;
+      line-height: 26px;
+      text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
+      font-family: 'Roboto-Medium', sans-serif;
+    }
+    .list-blue li {
+      padding-left: 35px;
+      &::before {
+        left: 5px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
   }
   .writing-texts-btn {
     width: 100%;
@@ -229,7 +393,7 @@
     }
     .btn-blue {
       width: 250px;
-      padding: 0 10px 0;
+      padding: 0 10px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -241,6 +405,9 @@
       margin-right: 20px;
       position: relative;
     }
+    span {
+      align-self: center;
+    }
   }
 
   .nav-tabs-blue li {
@@ -248,22 +415,45 @@
   }
 
   .clients {
+    padding-bottom: 123px;
     overflow: hidden;
-    .container::before {
-      background: url(../img/bg-clients-line-sm.png) no-repeat center;
-      position: absolute;
-      width: 140%;
-      height: 100%;
-      top: 120px;
-      left: -155px;
-      content: '';
-      z-index: -1;
+    &::before {
+      top: -16px;
+    }
+    .container {
+      padding-top: 156px;
+      &::before {
+        background: url(../img/bg-clients-line-sm.png) no-repeat center;
+        position: absolute;
+        width: 140%;
+        height: 100%;
+        top: 120px;
+        left: -155px;
+        content: '';
+        z-index: -1;
+      }
+    }
+    .nav-tabs {
+      position: relative;
+      z-index: 90;
     }
   }
   .client-visits li {
     width: calc(100% / 3);
+    &:first-child .client-visits-max {
+      margin-right: 77px;
+    }
   }
 
+  .recommendations {
+    padding-top: 77px;
+    h2 {
+      margin-bottom: 65px;
+    }
+    .nav-tabs-blue li {
+      flex: 1 1 auto;
+    }
+  }
   .recommendations-more {
     &::after {
       right: 20px;
@@ -274,9 +464,6 @@
 
     }
   }
-  .recommendations .nav-tabs-blue li {
-    flex: 1 1 auto;
-  }
 
   .about-me {
     .col-md-7 {
@@ -285,10 +472,9 @@
     .benefits li {
       flex-direction: column;
     }
-  }
-  .author-contacts-wrap {
-    display: block;
-    margin: 0 auto;
+    p {
+      padding: 0 15px;
+    }
   }
   .personal-block {
     width: 345px;
@@ -297,6 +483,10 @@
     position: absolute;
     bottom: 20px;
     left: 100%;
+  }
+  .author-contacts li:first-child {
+    max-width: 120px;
+    word-wrap: break-word;
   }
 
   .cooperation {
@@ -307,6 +497,44 @@
       margin-right: 20px;
       margin-bottom: 0;
     }
+  }
+  .cooperation-income-left {
+    min-height: 100px;
+  }
+
+  footer {
+    padding-bottom: 25px;
+    &::before {
+      bottom: -18px;
+    }
+  }
+}
+
+@include at('l') {
+  .faq {
+    padding-bottom: 72px;
+  }
+
+  .about-me .benefits {
+    justify-content: space-between;
+  }
+
+  .tariff .fancybox-view {
+    max-width: 41%;
+    margin-top: 10px;
+  }
+
+  .clients .container {
+    background: url(../img/bg-clients-md.png) no-repeat center 379px;
+    background-size: 968px 501px;
+  }
+  .client-visits {
+  }
+}
+
+@media (min-width: 1500px) {
+  .to-top {
+    right: 100px;
   }
 }
 
@@ -323,9 +551,6 @@ only screen and (min--moz-device-pixel-ratio: 1.5) {
 }
 
 @media (min-width: 768px) {
-  .modal-dialog {
-    width: 480px;
-  }
   .modal-title {
     font-size: 30px;
     color: #3C3C3C;
