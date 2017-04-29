@@ -1,6 +1,6 @@
 .cooperation {
-  padding-top: 145px;
-  padding-bottom: 175px;
+  padding-top: 150px;
+  padding-bottom: 145px;
   position: relative;
   color: #FFFFFF;
   background-image: linear-gradient(-52deg, #4580E0 0%, #2FE9FF 100%);
@@ -26,12 +26,14 @@
     box-shadow: 0 8px 15px 0 rgba(69,128,224,0.35);
   }
   .col-lg-7 {
-    letter-spacing: 1.1px;
+    margin-top: -4px;
+    letter-spacing: 1px;
+    line-height: 19px;
   }
 }
 
 .cooperation-income {
-  padding: 20px 20px 22px;
+  padding: 20px 20px 26px;
   margin-bottom: 60px;
   letter-spacing: 1px;
   background: rgba(69, 128, 224, 0.4);
@@ -77,7 +79,7 @@
 }
 
 .cooperation-partner {
-  padding-top: 35px;
+  padding-top: 30px;
   font-size: 17px;
   text-align: center;
   display: flex;
@@ -109,7 +111,7 @@
 }
 
 .cooperation-bottom {
-  padding-top: 40px;
+  padding-top: 57px;
   text-align: center;
   .btn {
     min-width: 250px;
