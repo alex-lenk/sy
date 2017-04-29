@@ -484,11 +484,12 @@
 
   .about-me {
     padding-top: 192px;
+    padding-bottom: 83px;
     h2 {
       padding-bottom: 36px;
     }
     .col-md-7 {
-      min-height: 265px;
+      min-height: 255px;
     }
     .benefits li {
       flex-direction: column;
@@ -509,9 +510,18 @@
     max-width: 120px;
     word-wrap: break-word;
   }
+  .author-contacts {
+    margin-top: 19px;
+  }
 
   .faq {
     padding-bottom: 70px;
+    h2 {
+      padding-bottom: 39px;
+    }
+  }
+  .faq-body {
+    padding: 13px 31px 20px;
   }
 
   .cooperation {
@@ -584,6 +594,37 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi),
 only screen and (min--moz-device-pixel-ratio: 1.5) {
+  .header::after {
+    background: url(../img/bg-header@2x.png) no-repeat top center;
+  }
+  .benefits-wrap::after {
+    background: url(../img/bg-for-business@2x.png) no-repeat center top;
+  }
+  .tariff::before {
+    background: url(../img/bg-writing-texts@2x.jpg) no-repeat center top;
+  }
+  .clients .container {
+    background: url(../img/bg-clients@2x.png) no-repeat center 386px;
+  }
+  .clients::after {
+    background-image: url(../img/bg-bottom-clients@2x.jpg);
+  }
+  .about-me {
+    background: url(../img/bg-about-me@2x.png) no-repeat center top;
+  }
+  .cooperation::before {
+    background: url(../img/bg-cooperation@2x.png) no-repeat center bottom;
+  }
+  footer::before {
+    background: url(../img/bg-footer@2x.png) no-repeat center top;
+  }
+  .clients .container {
+    background: url(../img/bg-clients@2x.png) no-repeat center 386px;
+    background-size: 1175px 502px;
+  }
+  .clients .container::before {
+    background: url(../img/bg-clients-line@2x.png) no-repeat center 60%;
+  }
 }
 
 @media (min-width: 768px) {
