@@ -56,10 +56,13 @@
     padding-left: 8px;
     @include RobotoMedium;
   }
-  a {
+  li {
+    letter-spacing: 1px;
     font-size: 15px;
     color: #585858;
-    letter-spacing: 1px;
+  }
+  a {
+    color: #585858;
     display: block;
     &:hover {
       color: #32b9fc;

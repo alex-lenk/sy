@@ -1859,10 +1859,14 @@ textarea.form-control {
   font-family: 'Roboto-Medium', sans-serif;
 }
 
-.author-contacts a {
+.author-contacts li {
+  letter-spacing: 1px;
   font-size: 15px;
   color: #585858;
-  letter-spacing: 1px;
+}
+
+.author-contacts a {
+  color: #585858;
   display: block;
 }
 
