@@ -118,6 +118,27 @@
 
   .writing-texts-price {
     width: 360px;
+    padding-top: 22px;
+    padding-left: 29px;
+
+    .title {
+      margin-left: 3px;
+      padding-bottom: 7px;
+      font-size: 20px;
+    }
+    .text {
+      margin-bottom: 17px;
+      margin-left: -7px;
+      padding-bottom: 9px;
+    }
+    .list-blue li {
+      padding-left: 20px;
+      margin-bottom: 2px;
+      &::before {
+        margin-right: 0;
+        left: -2px;
+      }
+    }
   }
   .writing-texts .btn {
     width: 220px;
@@ -273,6 +294,9 @@
         padding-left: 20px;
       }
     }
+  }
+  .header .for-business {
+    padding-right: 25px;
   }
   .header .for-business, .header .for-info {
     text-align: center;

@@ -38,6 +38,9 @@
   padding: 20px 0 15px;
   background-color: #F8FAFE;
   border-radius: 2px;
+  font-size: 15px;
+  letter-spacing: 1px;;
+  @include RobotoRegular;
   text-align: center;
   display: flex;
   justify-content: space-around;

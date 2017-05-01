@@ -13,21 +13,21 @@
     @include RobotoLight;
     &::before {
       background-color: #fff;
-      border: 1px solid #E1E6E9;
       border-radius: 50%;
       content: '';
-      width: 25px;
-      height: 25px;
+      width: 23px;
+      height: 23px;
       position: absolute;
       top:0;
       left: 0;
+      box-shadow: 0 0 0 1px #E1E6E9;
       transition: all .3s ease;
     }
     &::after {
       content: '';
       position: absolute;
-      top: 6px;
-      left: 6px;
+      top: 5px;
+      left: 5px;
       width: 13px;
       height: 13px;
       border-radius: 50%;
@@ -42,8 +42,7 @@
     color: #4580E0;
 
     &::before {
-      border-width: 2px;
-      border-color: #2FC0FF;
+      box-shadow: 0 0 0 2px #2FC0FF;
     }
     &::after {
       opacity: 1;
