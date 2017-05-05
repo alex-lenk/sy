@@ -149,20 +149,10 @@
   @include RobotoMedium;
 }
 
-#for-business-3, #for-info-3 {
-  padding-right: 30px;
-}
-
 .promotion-strategy {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-  > li:not(:last-child):not(:first-child) {
-    border-right: 1px solid #E1E6E9;
-    border-left: 1px solid #E1E6E9;
-  }
 }
 
 .promotion-strategy-title {

@@ -12,6 +12,19 @@
     margin-left: 40px;
   }
 
+  .header {
+    .for-business {
+      flex-basis: 466px;
+    }
+    .for-info {
+      flex-basis: 406px;
+    }
+  }
+  .header-content-title {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+  }
   .header-content-list li {
     display: inline-block;
     &:first-child {
@@ -24,6 +37,10 @@
     &:nth-child(even) {
       padding-left: 25px;
     }
+  }
+
+  #for-business-3, #for-info-3 {
+    padding-right: 30px;
   }
 
   .writing-texts-btn {
@@ -92,21 +109,27 @@
     padding-left: 14px;
   }
 
-  .promotion-strategy > li {
-    &:first-child, &:last-child {
-      width: 33%;
-    }
-    &:first-child {
-      padding-left: 0;
-      padding-right: 20px;
-    }
-    &:last-child {
-      padding-right: 0;
-      padding-left: 24px;
-    }
-    &:not(:last-child):not(:first-child) {
-      width: 380px;
-      padding: 0 23px;
+  .promotion-strategy {
+    display: flex;
+    justify-content: space-between;
+    > li {
+      &:not(:last-child):not(:first-child) {
+        width: 380px;
+        padding: 0 23px;
+        border-right: 1px solid #E1E6E9;
+        border-left: 1px solid #E1E6E9;
+      }
+      &:first-child, &:last-child {
+        width: 33%;
+      }
+      &:first-child {
+        padding-left: 0;
+        padding-right: 20px;
+      }
+      &:last-child {
+        padding-right: 0;
+        padding-left: 24px;
+      }
     }
   }
 }
@@ -245,6 +268,12 @@
 }
 
 @include to('s') {
+  .modal-title {
+    font-size: 30px;
+    color: #3C3C3C;
+    letter-spacing: 2px;
+    @include RobotoBold;
+  }
   .to-top {
     display: none;
   }
@@ -263,10 +292,14 @@
   }
   .header-content {
     margin-bottom: 112px;
+    .btn-transparent {
+      min-width: 0;
+      align-self: baseline;
+    }
   }
   .header-content-title {
     margin-bottom: 15px;
-    flex-direction: column;
+    align-self: baseline;
     svg {
       margin-bottom: 12px;
       display: block;
@@ -284,24 +317,25 @@
         padding-bottom: 7px;
       }
       &:nth-child(2) {
+        font-size: 15px;
         order: 2;
-        padding: 13px 10px 6px 20px;
+        padding: 13px 10px 6px 0;
         margin-top: 15px;
         border-top: 2px solid #fff;
       }
+      &:nth-child(odd)::before {
+        margin-top: 7px;
+        margin-right: 13px;
+      }
       &:last-child {
+        font-size: 15px;
         order: 3;
-        padding-left: 20px;
       }
     }
   }
-  .header .for-business {
-    padding-right: 25px;
-  }
   .header .for-business, .header .for-info {
-    text-align: center;
-    flex-basis: 50%;
-    max-width: 50%;
+    display: inline-flex;
+    flex-direction: column;
   }
 
   .benefits-wrap {
@@ -319,7 +353,6 @@
       margin-bottom: 58px;
     }
     .nav-tabs {
-      padding-left: 5px;
       > li {
         font-size: 15px;
         &::before {
@@ -336,12 +369,12 @@
       margin-bottom: 26px;
     }
     .tab-content {
-      padding-left: 27px;
+      padding-left: 34px;
     }
-    .tariff-order {
-      bottom: -17px;
-      z-index: 90;
-    }
+  }
+  .tariff-order {
+    bottom: -23px;
+    z-index: 90;
   }
   .info-description {
     margin-left: 6px;
@@ -358,15 +391,26 @@
     margin-bottom: 45px;
   }
 
-  .promotion-strategy-title {
-    min-height: 76px;
+  .tariff-title-tab {
+    margin: -22px 0 29px;
+    line-height: 27px;
   }
-  .promotion-strategy > li {
-    width: 33%;
-    &:not(:last-child):not(:first-child) {
-      padding: 0 5px;
-      margin: 0 5px;
+  .promotion-strategy {
+    > li:not(:last-child) {
+      margin-bottom: 27px;
     }
+    .list-dash {
+      column-count: 2;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .promotion-strategy-title {
+    padding: 15px 10px 15px;
+    margin-bottom: 17px;
   }
 
   .writing-texts {
@@ -609,10 +653,35 @@
 }
 
 @media (min-width: 1921px) {
+  .header::after {
+    height: 196px;
+    background: url(../img/bg-header@2x.png) no-repeat center bottom;
+  }
+  .tariff {
+    padding-top: 200px;
+    &::before {
+      height: 222px;
+    }
+  }
+  .cooperation::before {
+    height: 210px;
+  }
+  .clients::after {
+    height: 205px;
+  }
+  footer::before {
+    height: 200px;
+    margin-top: 0;
+    background: url(../img/bg-footer@2x.png) no-repeat center bottom;
+    position: absolute;
+    bottom: 100%;
+  }
+
   .header::after, .tariff::before, .clients::before, .benefits-wrap::after, .clients::after, .about-me,
   .cooperation::before, footer::before {
     background-size: 100%;
   }
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -620,42 +689,72 @@ only screen and (min-resolution: 144dpi),
 only screen and (min--moz-device-pixel-ratio: 1.5) {
   .header::after {
     background: url(../img/bg-header@2x.png) no-repeat top center;
+    background-size: cover;
   }
   .benefits-wrap::after {
-    background: url(../img/bg-for-business@2x.png) no-repeat center top;
+    background: url(../img/bg-for-business-sm@2x.png) no-repeat center top;
+    background-size: 100%;
+    top: 125%;
   }
   .tariff::before {
     background: url(../img/bg-writing-texts@2x.jpg) no-repeat center top;
+    background-size: cover;
   }
   .clients .container {
     background: url(../img/bg-clients@2x.png) no-repeat center 386px;
+    background-size: cover;
   }
   .clients::after {
     background-image: url(../img/bg-bottom-clients@2x.jpg);
+    background-size: cover;
   }
   .about-me {
-    background: url(../img/bg-about-me@2x.png) no-repeat center top;
+    background: url(../img/bg-for-business-sm@2x.png) no-repeat center 12%;
+    background-size: 100%;
   }
   .cooperation::before {
-    background: url(../img/bg-cooperation@2x.png) no-repeat center bottom;
+    background: url(../img/bg-cooperation@2x.png) no-repeat center top;
+    background-size: 140%;
   }
   footer::before {
     background: url(../img/bg-footer@2x.png) no-repeat center top;
+    background-size: cover;
   }
   .clients .container {
     background: url(../img/bg-clients@2x.png) no-repeat center 386px;
     background-size: 1175px 502px;
   }
   .clients .container::before {
-    background: url(../img/bg-clients-line@2x.png) no-repeat center 60%;
+    background: url(../img/bg-clients-line@2x.png) no-repeat center 41%;
+    background-size: 100%;
   }
-}
 
-@media (min-width: 768px) {
-  .modal-title {
-    font-size: 30px;
-    color: #3C3C3C;
-    letter-spacing: 2px;
-    @include RobotoBold;
+  .writing-texts .container {
+    &::after {
+      background: url(../img/buble-decor@2x.png) no-repeat center;
+    }
+    &::after {
+      background: url(../img/buble-decor-mini@2x.png) no-repeat center;
+    }
+    &::after, &::before {
+      background-size: contain;
+    }
+  }
+
+  .writing-texts-btn::before {
+    background: url(../img/buble-writing@2x.png) no-repeat center;
+    background-size: contain;
+  }
+
+  .recommendations-more {
+    &::before {
+      background: url(../img/buble-recommendations@2x.png) no-repeat center;
+    }
+    &::after {
+      background: url(../img/buble-recommendations-mini@2x.png) no-repeat center;
+    }
+    &::before, &::after {
+      background-size: contain;
+    }
   }
 }

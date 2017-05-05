@@ -32,6 +32,7 @@ footer {
   position: fixed;
   z-index: 509;
   box-shadow: 0 8px 12px 0 rgba(191, 191, 191, 0.35);
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,5 +41,13 @@ footer {
     height: 15px;
     fill: #4580E0;
     transform: rotateZ(-90deg);
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background: #E0A700;
+    box-shadow: 0 8px 12px 0 rgba(232, 173, 0, 0.35);
+    .arrow {
+      fill: #ffffff;
+    }
   }
 }
