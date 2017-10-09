@@ -1,5 +1,7 @@
 @import "mixin";
-
+input {
+  -webkit-appearance: none;
+}
 .btn {
   border-width: 0;
   background: transparent;

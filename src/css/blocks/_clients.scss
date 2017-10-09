@@ -111,6 +111,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-self: flex-end;
+    align-items: flex-end;
 
     &:first-child .client-visits-max {
       margin-right: 60px;
@@ -138,7 +139,7 @@
 
   &::after {
     width: 35px;
-    height: 50px;
+    height: calc(100% - 44px);
     margin-right: -10px;
     content: '';
     border-radius: 2px 0 0 2px;
@@ -154,7 +155,7 @@
   align-items: flex-end;
   &::after {
     width: 73px;
-    height: 246px;
+    height: calc(100% - 44px);
     border-radius: 2px 2px 2px 0;
     content: '';
     background-image: linear-gradient(-179deg, #FFBE00 0%, #E0A700 100%);
@@ -172,32 +173,5 @@
     max-height: 45px;
     margin: 0 auto 20px;
     display: block;
-  }
-}
-
-.zetta {
-  .client-visits-min::after {
-    height: 148px;
-  }
-  .client-visits-max::after {
-    height: 316px;
-  }
-}
-
-.reso {
-  .client-visits-min::after {
-    height: 86px;
-  }
-  .client-visits-max::after {
-    height: 413px;
-  }
-}
-
-.ingostrah {
-  .client-visits-min::after {
-    height: 112px;
-  }
-  .client-visits-max::after {
-    height: 367px;
   }
 }

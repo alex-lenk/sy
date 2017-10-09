@@ -280,7 +280,7 @@
 }
 
 @include to('m') {
-  .header {
+  .header:not(.header-full) {
     height: 890px;
   }
   .top-panel {
@@ -622,6 +622,27 @@
       bottom: -18px;
     }
   }
+
+  .modal-dialog {
+    width: 720px;
+  }
+
+  .order-modal .nav-tabs {
+    justify-content: space-around;
+  }
+
+  .form-half {
+    display: flex;
+    justify-content: space-between;
+    .form-group {
+      width: calc(100% / 2 - 10px);
+    }
+  }
+
+  .mobile .header-content {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
 }
 
 @include at('l') {
@@ -665,6 +686,7 @@
   }
   .cooperation::before {
     height: 210px;
+    background-position-y: top;
   }
   .clients::after {
     height: 205px;

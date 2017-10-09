@@ -1678,7 +1678,7 @@ button.close {
 }
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .show {
@@ -1698,7 +1698,7 @@ button.close {
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 .affix {
@@ -2645,3 +2645,5 @@ li.fancybox-thumbs-loading {
     right: 0;
   }
 }
+
+/*# sourceMappingURL=../maps/bootstrap.css.map */

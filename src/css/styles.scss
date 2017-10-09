@@ -105,3 +105,25 @@
     }
   }
 }
+
+.modal {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.modal:after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  content: '';
+}
+
+.modal-dialog {
+  width: auto;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  white-space: normal;
+}
